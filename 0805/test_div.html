@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            display: inline-block;
+            width: 200px;
+            height: 50px;
+            background-color: rgb(243, 169, 142);
+            border: solid 1px;
+        }
+        span{
+            display: inline-block; /*가로 세로 사이즈를 적용하고 싶으면  display의 inline-block을 사용해야 할 수 있다.*/
+            width: 200px;
+            height: 50px;
+            background-color: rgb(243, 208, 195);
+            border: solid 1px;
+        }
+        input{
+            display: block;
+            width:200px;
+            height: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <div> 태그 -->
+    <!-- block 태그  
+     1. 라인이 바뀐다. 즉, 자동으로 아래로 배치됨
+     2. width,height 스타일이 적용된다. -->
+    
+    <div>div 태그- block 형식</div>
+    <div>div 태그- block 형식</div>
+    <div>div 태그- block 형식</div>
+    <div>div 태그- block 형식</div>
+    <div>div 태그- block 형식</div>
+    <div>div 태그- block 형식</div> 
+    
+    <!-- inline 태그
+     1.라인이 바뀌지 않는다. 즉, 옆으로 배치됨
+     2.widht, height스타일이 적용되지 않는다. -->
+    <span>span태그 - inline 형식</span>
+    <span>span태그 - inline 형식</span>
+    <span>span태그 - inline 형식</span>
+    <span>span태그 - inline 형식</span>
+    <span>span태그 - inline 형식</span>
+
+    <input type="text">
+    <input type="text">
+    <input type="button">
+</body>
+</html>

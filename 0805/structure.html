@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+            float: left ;
+            border:solid 1px;
+            padding: 15px;
+        }
+        li:nth-child(2n){ /* 짝수번*/
+            background-color: lightsalmon;
+        }
+        li:nth-child(2n-1){/* 홀수번*/
+            background-color: lightseagreen;
+        }
+         /*왼쪽 모서리부터 시계방향 둥글리기*/
+        li:first-child{
+            border-radius: 10px 0 0 10px;
+        }
+        li:last-child{
+            border-radius: 0 10px 10px 0; 
+        }
+        /* padding과 margin
+        padding: 컨텐츠와의(글씨등...) 영역, 상 하 좌 우 가 존재
+        margin: 상,우,하,좌 ;(시계 방향)가 존재 
+        margin: 상,하 ;
+        */
+    </style>
+</head>
+<body>
+    <ul>
+        <li>첫</li>
+        <li>두</li>
+        <li>셋</li>
+        <li>네</li>
+        <li>다섯</li>
+        <li>여섯</li>
+        <li>일곱</li>
+    </ul>
+
+</body>
+</html>

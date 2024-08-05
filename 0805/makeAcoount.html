@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="test.html">
+        <fieldset>
+            <legend>계좌 개설</legend>
+            <table>
+                <tr> <!--row: 한 행-->
+                    <th><label for="accNum">계좌 번호</label></th> <!--lalbel의 for속성은 포커스를 for가 가리키는 id로 이동시켜줌-->
+                    <td><input type="number" id="accNum"></td>
+                </tr>
+                <tr> <!--row: 한 행-->
+                    <th><label for="name">이름</label></th> <!--lalbel의 for속성은 포커스를 for가 가리키는 id로 이동시켜줌-->
+                    <td><input type="text" id="name"></td>
+                </tr>
+                <tr>
+                    <th><label for="money">입금액</label></th>
+                    <td><input type="number" id="money"></td>
+                </tr>
+                <tr>
+                    <th><label>종류</label></th>
+                    <td><input type="radio" name="account" value="normal">일반
+                        <input type="radio" name="account" value="special">특수
+                    </td>
+                </tr>
+                <tr>
+                    <th><label>등급</label></th>
+                    <td>
+                        <select name="grade" id="grade">
+                            <option value="VIP">VIP</option>
+                            <option value="gold">GOLD</option>
+                            <option value="silver">SILVER</option>
+                            <option value="normal">NORMAL</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="개설"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+    </form>
+
+
+</body>
+
+</html>

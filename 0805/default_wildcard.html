@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* [*] : 전체 태그를 의미   */
+        * {
+            color: crimson;
+        }
+        /* 명시적 태그명을 넣으면 그게 우선됨 */
+        h1{
+            color: orange;
+        }
+        /* [#아이디명]  : 식별자 */
+        #header{
+            color:rgb(245, 225, 137);
+        }
+        /*[.클래스명 ]*/
+        .myclass{
+            color:cadetblue;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!--속성끼리 띄어쓰기 필수-->
+    
+    <!--id와 class중에서 **id가 우선됨(유일)**-->
+    <!-- id=> id 만 특별하게 스타일을 주고싶을 때 
+
+    class=> 서로 다른 태그인데 공통적인 스타일을 주고 싶을 때  -->
+    <!-- 라이브러리 등 스크립트에서 대부분 class명으로 핸들링 하는게 많기 때문에 쉽게 변경해서는 안된다. -->
+    <h1 id="header"  class="myclass">제목 글자 태그1</h1> 
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eum expedita id, iusto amet iure, consectetur odit perferendis unde quod quisquam? Dignissimos adipisci soluta asperiores exercitationem molestiae assumenda debitis excepturi!</p>
+
+    <h1>제목 글자 태그2</h1> <!--속성끼리 띄어쓰기 필수-->
+    <p class="myclass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eum expedita id, iusto amet iure, consectetur odit perferendis unde quod quisquam? Dignissimos adipisci soluta asperiores exercitationem molestiae assumenda debitis excepturi!</p>
+
+</body>
+</html>

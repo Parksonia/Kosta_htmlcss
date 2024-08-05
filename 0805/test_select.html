@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="test.html">
+        <select name="menu" id=""> <!-- select=>name(key), option=>value(value) 를 가져간다.-->
+            <option value="김밥">김밥</option>
+            <option value="떡볶이">떡볶이</option>
+            <option value="순대">순대</option>
+            <option value="쫄면">쫄면</option>
+        </select>
+        <input type="submit" value="전송">
+    </form>
+    <!-- 여러개 선택 가능 한 형태도 가능 -->
+    <form action="test.html">
+        <select name="menu" id="" multiple >
+            <option value="김밥">김밥</option>
+            <option value="떡볶이">떡볶이</option>
+            <option value="순대">순대</option>
+            <option value="쫄면">쫄면</option>
+        </select>
+        <input type="submit" value="전송">
+    </form>
+    <form action="text.html">
+        <select name="skill">
+            <optgroup label="HTML5">
+                <option value="mt">Multimedia Tag</option>
+                <option value="con">Connectiveity</option>
+                <option value="dev">Device Access</option>
+            </optgroup>
+            <optgroup label="CSS3">
+                <option value="ani">Animation</option>
+                <option value="3dt">3D Transform</option>
+            </optgroup>
+        </select>
+        <input type="submit" value="전송">
+    </form>
+</body>
+</html>

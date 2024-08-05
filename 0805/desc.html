@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*자식 태그들의 스타일 변경 하기*/
+        /*자식,후손은 스페이스로 구분*/
+        /* 자식만은  > 로 구분 */
+        #header h1 {color: red;}
+        #section > h1{color: orange;}
+
+        h2,span{ color: blue}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1 class="title"> Lorem ipsum</h1>
+        <div id="nav">
+            <h1>Navigation</h1>
+        </div>
+    </div>
+    <div id="section">
+        <h1 class="title"> Lorem ipsum</h1>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aliquid quae laboriosam beatae iure quod voluptatem ab iste amet, esse temporibus consequuntur nobis qui, soluta suscipit veritatis aut recusandae quos!</p> 
+    </div>
+    <div>
+        <span>Lorem ipsum</span>
+        <h2>Lorem ipsum</h2>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aliquid quae laboriosam beatae iure quod voluptatem ab iste amet, esse temporibus consequuntur nobis qui, soluta suscipit veritatis aut recusandae quos!</p> 
+    </div>
+
+</body>
+</html>
