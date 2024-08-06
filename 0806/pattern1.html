@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gupter:wght@400;500;700&display=swap');
+        @font-face{
+            /* 사용한 폰트 이름 */
+           font-family: "BMJUA"; 
+           src:url(BMJUA.woff)format("woff");
+           font-weight: normal;
+           font-style:normal;
+        }
+        * {
+            font-family: "BMJUA" ;
+            margin : 0;
+            padding : 0;
+        }
+        body {
+            width: 960px;
+            margin : 0 auto;
+            overflow: hidden;
+        }
+        #menu {
+            width: 260px;
+            float: left;
+        }
+        #section {
+            width: 700px;
+            float: right;
+        }
+        @media screen and (max-width:767px) {
+            /* 스마트폰 사이즈에서는 전부 해제  */
+            body {
+                width: auto;
+            }
+            #menu {
+                display: none;
+            
+            }
+            #section {
+                width: auto;
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div  id="menu">
+        <ul>
+            <li>메뉴A</li>
+            <li>메뉴B</li>
+            <li>메뉴C</li>
+        </ul>
+    </div>
+
+    <div id="section">
+        <h1>Lorem ipsum doolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio autem minima hic aut culpa aspernatur facere
+        cumque! Cum maiores itaque reprehenderit id odio, voluptate voluptatibus laudantium quasi sequi consequuntur
+        nobis!</p>
+    </div>
+</body>
+</html>

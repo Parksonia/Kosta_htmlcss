@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button{
+            width: 150px;
+            height: 70px;
+            background-color:orange;
+            border: 10px solid white;
+            border-radius: 30px;
+            box-shadow: 5px 5px 5px crimson;
+        }
+        .button>a{
+            display: block; /*중앙 정렬을 위해 display 를 block으로 설정하고 */
+            line-height: 70px; /*부모(button)의 height과 자식의(a)line-height를 맞추어야 중앙 정렬이됨*/
+            text-decoration: none;
+        }
+        .font_arial {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .font_roman {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .font_big {
+            font-size: 2em;
+
+        }
+
+        .font_italic {
+            font-style: italic;
+        }
+
+        .font_bold {
+            font-weight: bold;
+        }
+
+        .font_center {
+            text-align: center;
+        }
+
+        .font_right {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="button">
+        <a href="#" class="font_big font_italic font_center font_bold">Click</a></div>
+</body>
+
+</html>
